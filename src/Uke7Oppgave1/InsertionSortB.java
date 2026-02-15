@@ -6,6 +6,8 @@ package Uke7Oppgave1;
 //i sortert del to plasser til høyre. Når vi finner rett plass for største, forsetter vi som vanlig
 //med å sette inn minste.
 
+import java.util.Arrays;
+
 public class InsertionSortB {
 
     public static <T extends Comparable<T>> void sort(T[] a){

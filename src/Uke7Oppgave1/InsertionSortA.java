@@ -4,9 +4,11 @@ package Uke7Oppgave1;
 //elementer være så stort at det tar minst 5 sekunder å utføre sorteringen. Skriv kort hva dere
 //observerer. For å generere tilfeldige data og måle tid, se til slutt i øvingen.
 
+import java.util.Arrays;
+
 public class InsertionSortA {
 
-    public static <T extends Comparable <T>> void sort(T[] a){
+    public static <T extends Comparable<T>> void insertionSortA(T[] a) {
 
 
         if(a.length <= 1) return; //hvis tabell length <= 1 -- allerede sortert
@@ -34,7 +36,6 @@ public class InsertionSortA {
         for(int i = 2; i < a.length; i++){
 
             T temp = a[i];
-
             int j = i - 1; // j = index before i
 
             //flytt(move) elementer til høyre hvis de er større enn temp,
@@ -47,8 +48,25 @@ public class InsertionSortA {
 
         }
 
+        //Imagine: array = {1,2,9,8,3,5}
+        // T temp = 8
+        //int j = 9
+        //8 compare to (9) <0
 
 
 
+
+    }
+
+    public static void main(String[] args) {
+
+
+        Integer[] taller = {9,7,6,3,8,2,30,1,11};
+
+        System.out.println("Before: " + Arrays.toString(taller));
+
+        insertionSortA(taller);
+
+        System.out.println("After:  " + Arrays.toString(taller));
     }
 }
