@@ -8,6 +8,8 @@ import java.util.Arrays;
 
 public class InsertionSortA {
 
+    //we are going through 1 element: one to another
+
     public static <T extends Comparable<T>> void insertionSortA(T[] a) {
 
         if(a.length <= 1) return; //hvis tabell length <= 1 -- allerede sortert

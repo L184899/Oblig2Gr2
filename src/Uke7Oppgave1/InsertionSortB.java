@@ -10,21 +10,21 @@ import java.util.Arrays;
 
 public class InsertionSortB {
 
+    // we take one pair, inside of this pair storste og minste,
     public static <T extends Comparable<T>> void insertionSortB(T[] a){
 
         //going through 2 elements each iteration
         for(int i = 1; i < a.length; i +=2){
 
-            //if i = a[0]
+            //if i is the same element as the last
             if(i == a.length-1){
 
+                //{8,9,7}
 
-                //temp = a[1]
-                T temp = a[i]; //temp start from no index
-                //j = a[0]
-                int j = i - 1;
+                T temp = a[i]; //7
+                int j = i - 1; //9
 
-                //hvis j >= 0 and temp
+                //hvis j >= 0 and temp > 0 and a[j] > 0
                 while(j >= 0 && temp.compareTo(a[j]) > 0){
                     a[j+1] = a[j]; //shift to the right
                     j--;
