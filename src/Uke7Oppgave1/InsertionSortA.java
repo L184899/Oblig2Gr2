@@ -10,7 +10,6 @@ public class InsertionSortA {
 
     public static <T extends Comparable<T>> void insertionSortA(T[] a) {
 
-
         if(a.length <= 1) return; //hvis tabell length <= 1 -- allerede sortert
 
         int minIndex = 0;
@@ -18,12 +17,11 @@ public class InsertionSortA {
         for(int i = 1; i < a.length; i++){ //start fra index 1
 
             //if nåværende(current) i index er minste,
-            // minIndex = i (mener at det minste element kommer første i tabell)
+            //minIndex = i (mener at det minste element kommer første i tabell)
             if(a[i].compareTo(a[minIndex]) < 0){
                 minIndex = i;
             }
         }
-
         //basic assignation of element to a place
         //we create help variable tempMin and assign to a[0]
         T tempMin = a[0];
@@ -49,8 +47,10 @@ public class InsertionSortA {
         }
 
         //Imagine: array = {1,2,9,8,3,5}
-        // T temp = 8
-        //int j = 9
+        //9 = I = temp, 2 < temp, 8
+        // T temp = 8 = i
+        //int j = 9 = i - 1
+        //int j = i -1
         //8 compare to (9) <0
 
 

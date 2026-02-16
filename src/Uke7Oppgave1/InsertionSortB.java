@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 public class InsertionSortB {
 
-    public static <T extends Comparable<T>> void sort(T[] a){
+    public static <T extends Comparable<T>> void insertionSortB(T[] a){
 
         //going through 2 elements each iteration
         for(int i = 1; i < a.length; i +=2){
