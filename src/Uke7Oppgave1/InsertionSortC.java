@@ -59,7 +59,6 @@ public class InsertionSortC {
 
             int j = i - 1;
 
-            // Sentinel: a[0] er globalt minste, så vi trenger ikke j>=0
             while(storste.compareTo(a[j]) < 0){
                 a[j+2] = a[j];
                 j--;

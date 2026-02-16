@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 public class InsertionSortB {
 
-    // we take one pair, inside of this pair storste og minste,
+    //we take one pair, inside of this pair storste og minste,
     public static <T extends Comparable<T>> void insertionSortB(T[] a){
 
         //going through 2 elements each iteration

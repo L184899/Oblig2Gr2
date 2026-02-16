@@ -61,7 +61,7 @@ public class TidMaling {
 
         System.out.println("Gjennomsnitt C: " + (tidC / antal) + " ms");
     }
-    
+
     private static Integer[][] copy2D(Integer[][] src) {
         Integer[][] copy = new Integer[src.length][];
         for (int i = 0; i < src.length; i++) {
