@@ -14,7 +14,7 @@ public class TidMaling {
 
         Random tilfeldig = new Random(1);
 
-        int n = 50000; 
+        int n = 50000;
         int antal = 5;
 
         // Lager én tilfeldig 2D-tabell
@@ -54,7 +54,7 @@ public class TidMaling {
         Instant sluttB = Instant.now();
         long tidB = Duration.between(startB, sluttB).toMillis();
 
-        System.out.println("Gjennomsnitt B: " + (tidB / antal) + " ms");
+        System.out.println("Gjennomsnitt: " + (tidB / antal) + " ms");
 
 
         // --- Måling C ---
