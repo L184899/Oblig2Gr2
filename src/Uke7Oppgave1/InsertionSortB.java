@@ -19,10 +19,8 @@ public class InsertionSortB {
             //if i is the same element as the last
             if(i == a.length-1){
 
-                //{8,9,7}
-
-                T temp = a[i]; //7
-                int j = i - 1; //9
+                T temp = a[i];
+                int j = i - 1;
 
                 //hvis j >= 0 and temp > 0 and a[j] < 0
                 while(j >= 0 && temp.compareTo(a[j]) < 0){
@@ -63,8 +61,6 @@ public class InsertionSortB {
                 j--;
             }
             a[j+1] = minste;
-
-
         }
     }
 }

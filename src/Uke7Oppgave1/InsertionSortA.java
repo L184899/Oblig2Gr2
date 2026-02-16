@@ -45,10 +45,10 @@ public class InsertionSortA {
                 j--;
             }
             a[j + 1] = temp;
-
         }
     }
 
+    //my little test
     public static void main(String[] args) {
 
         Integer[] taller = {9,7,6,3,8,2,30,1,11};
