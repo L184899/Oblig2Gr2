@@ -44,13 +44,12 @@ public class InsertionSortC {
             }
 
             //oppgave b condition
-
             T x = a[i];
             T y = a[i+1];
             T minste, storste;
 
             //if x <= 0 comparing to y, then x<y
-            if(x.compareTo(y)<=0){
+            if(x.compareTo(y) <= 0){
                 minste = x;
                 storste = y;
             } else {
