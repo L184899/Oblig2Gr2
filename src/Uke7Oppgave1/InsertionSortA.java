@@ -24,16 +24,16 @@ public class InsertionSortA {
                 minIndex = i;
             }
         }
-        //basic assignation of element to a place
-        //we create help variable tempMin and assign to a[0]
-        T tempMin = a[0];
-        a[0] = a[minIndex];
-        a[minIndex] = tempMin;
-        //think of it as a ladder
 
+        while (minIndex > 0) {
+            T tmp = a[minIndex];
+            a[minIndex] = a[minIndex - 1];
+            a[minIndex - 1] = tmp;
+            minIndex--;
+        }
 
-        //start sort fra indeks 2 (0 er minst, 1 skal bli definert)
-        for(int i = 2; i < a.length; i++){
+        //start sort fra indeks 1 (0 er minst, så vi kan starte på 1)
+        for(int i = 1; i < a.length; i++){
 
             T temp = a[i];
             int j = i - 1; // j = index before i
@@ -47,21 +47,9 @@ public class InsertionSortA {
             a[j + 1] = temp;
 
         }
-
-        //Imagine: array = {1,2,9,8,3,5}
-        //9 = I = temp, 2 < temp, 8
-        // T temp = 8 = i
-        //int j = 9 = i - 1
-        //int j = i -1
-        //8 compare to (9) <0
-
-
-
-
     }
 
     public static void main(String[] args) {
-
 
         Integer[] taller = {9,7,6,3,8,2,30,1,11};
 

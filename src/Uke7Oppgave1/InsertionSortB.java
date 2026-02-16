@@ -24,8 +24,8 @@ public class InsertionSortB {
                 T temp = a[i]; //7
                 int j = i - 1; //9
 
-                //hvis j >= 0 and temp > 0 and a[j] > 0
-                while(j >= 0 && temp.compareTo(a[j]) > 0){
+                //hvis j >= 0 and temp > 0 and a[j] < 0
+                while(j >= 0 && temp.compareTo(a[j]) < 0){
                     a[j+1] = a[j]; //shift to the right
                     j--;
                 }

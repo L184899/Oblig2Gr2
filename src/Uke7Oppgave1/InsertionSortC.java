@@ -20,11 +20,13 @@ public class InsertionSortC {
                 minIndex = i;
             }
         }
-        T tempMin = a[0];
-        a[0] = a[minIndex];
-        a[minIndex] = tempMin;
 
-
+        while (minIndex > 0) {
+            T tmp = a[minIndex];
+            a[minIndex] = a[minIndex - 1];
+            a[minIndex - 1] = tmp;
+            minIndex--;
+        }
 
         for(int i = 1; i < a.length; i += 2){
 
@@ -58,6 +60,7 @@ public class InsertionSortC {
 
             int j = i - 1;
 
+            // Sentinel: a[0] er globalt minste, så vi trenger ikke j>=0
             while(storste.compareTo(a[j]) < 0){
                 a[j+2] = a[j];
                 j--;
@@ -69,9 +72,6 @@ public class InsertionSortC {
                 j--;
             }
             a[j+1] = minste;
-
         }
     }
-
-
 }
