@@ -8,6 +8,9 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 
 public class SorteringTest {
+
+    //tester liten tabell (n = 10)
+
     @Test
     public void testMergeSortering() {
         Integer[] tabell = {6,9,3,4,8,2,1,7,5};

@@ -10,7 +10,7 @@ public class TidKalkulator {
         int[] N = {32000, 64000, 128000};
         int repeats = 5;
 
-        System.out.println("=== RANDOM DATA ===");
+        System.out.println("Random data");
 
         for (int n : N) {
 
