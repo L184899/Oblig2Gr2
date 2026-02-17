@@ -74,6 +74,7 @@ public class InsertionSortC {
             a[j+1] = minste;
         }
     }
+
     public static void main(String[] args) {
 
         Integer[] taller = {9,7,6,3,8,2,30,1,11};

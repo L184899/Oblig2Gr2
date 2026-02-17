@@ -34,8 +34,8 @@ public class InsertionSortB {
 
             //calling 2 elements, i and before i,
             //for-loop starts fra index 1, so we called a[0] og a[1]
-            T x = a[i-1];
-            T y = a[i];
+            T x = a[i];
+            T y = a[i+1];
             T minste, storste;
 
             //hvis a[0] <= 0, a[0] = minste, y - største
@@ -48,7 +48,7 @@ public class InsertionSortB {
             }
 
             //i oppgave A vi bruker j = i-1 fordi vi gå gjennom 1 element i time
-            int j = i - 2;
+            int j = i - 1;
 
             while(j >= 0 && storste.compareTo(a[j]) < 0){
                 a[j+2] = a[j]; //to elementer flytt til hoyre
