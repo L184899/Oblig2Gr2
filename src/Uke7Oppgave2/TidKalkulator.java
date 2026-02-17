@@ -1,7 +1,5 @@
 package Uke7Oppgave2;
 
-import java.util.Scanner;
-
 import static Uke7Oppgave2.EqualArray.equalArray;
 import static Uke7Oppgave2.RandomArray.randomArray;
 import static Uke7Oppgave2.Sortering.*;
