@@ -16,18 +16,20 @@ public class TidKalkulator {
 
             Integer[] base = randomArray(n, 1_000_000);
 
-            long ti = timeSort("insert", base, repeats);
-            long ts = timeSort("select", base, repeats);
-            long tq = timeSort("quick", base, repeats);
-            long tm = timeSort("merge", base, repeats);
+            long tinsertion = timeSort("insert", base, repeats);
+            long tselection = timeSort("select", base, repeats);
+            long tquick = timeSort("quick", base, repeats);
+            long tmerge = timeSort("merge", base, repeats);
 
             System.out.println("\nN = " + n);
-            System.out.println("Insertion ms: " + ti / 1_000_000);
-            System.out.println("Selection ms: " + ts / 1_000_000);
-            System.out.println("Quick ms:     " + tq / 1_000_000);
-            System.out.println("Merge ms:     " + tm / 1_000_000);
+            System.out.println("Insertion ms: " + tinsertion / 1_000_000);
+            System.out.println("Selection ms: " + tselection / 1_000_000);
+            System.out.println("Quick ms:     " + tquick / 1_000_000);
+            System.out.println("Merge ms:     " + tmerge / 1_000_000);
         }
 
+
+        //use of equalArray method (also tested for array med lik elementer i SorteringTest)
         System.out.println("\nquick sort - alle lik elementer");
 
         Integer[] equal = equalArray(20000);
