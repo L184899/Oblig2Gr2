@@ -4,6 +4,8 @@ package Uke7Oppgave1;
 //og deretter sette inn to elementer om gangen. Pass på at metoden fungerer for både odde
 //og jevne n. Skriv kort hva dere observerer.
 
+import java.util.Arrays;
+
 public class InsertionSortC {
 
     public static <T extends Comparable<T>> void insertionSortC(T[] a) {
@@ -71,5 +73,15 @@ public class InsertionSortC {
             }
             a[j+1] = minste;
         }
+    }
+    public static void main(String[] args) {
+
+        Integer[] taller = {9,7,6,3,8,2,30,1,11};
+
+        System.out.println("Before: " + Arrays.toString(taller));
+
+        insertionSortC(taller);
+
+        System.out.println("After:  " + Arrays.toString(taller));
     }
 }

@@ -48,7 +48,7 @@ public class InsertionSortB {
             }
 
             //i oppgave A vi bruker j = i-1 fordi vi gå gjennom 1 element i time
-            int j = i-2;
+            int j = i - 2;
 
             while(j >= 0 && storste.compareTo(a[j]) < 0){
                 a[j+2] = a[j]; //to elementer flytt til hoyre
@@ -62,5 +62,15 @@ public class InsertionSortB {
             }
             a[j+1] = minste;
         }
+    }
+    public static void main(String[] args) {
+
+        Integer[] taller = {9,7,6,3,8,2,30,1,11};
+
+        System.out.println("Before: " + Arrays.toString(taller));
+
+        insertionSortB(taller);
+
+        System.out.println("After:  " + Arrays.toString(taller));
     }
 }
