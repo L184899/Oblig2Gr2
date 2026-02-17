@@ -1,7 +1,7 @@
 package Uke7Oppgave2;
 
-import static Uke7Oppgave2.EqualArray.equalArray;
-import static Uke7Oppgave2.RandomArray.randomArray;
+import static Uke7Oppgave2.TidMetoder.equalArray;
+import static Uke7Oppgave2.TidMetoder.randomArray;
 import static Uke7Oppgave2.Sortering.*;
 
 public class TidKalkulator {
@@ -28,10 +28,6 @@ public class TidKalkulator {
             System.out.println("Merge ms:     " + tm / 1_000_000);
         }
 
-
-
-
-        //b ---???
         System.out.println("\nquick sort - alle lik elementer");
 
         Integer[] equal = equalArray(20000);
