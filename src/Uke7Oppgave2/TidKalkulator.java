@@ -36,7 +36,7 @@ public class TidKalkulator {
         //b ---???
         System.out.println("\nquick sort - alle lik elementer");
 
-        Integer[] equal = equalArray(50000);
+        Integer[] equal = equalArray(20000);
         long t = timeSort("quick", equal, 3);
 
         System.out.println("Quick equal ms: " + t / 1_000_000);
